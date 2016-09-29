@@ -1,0 +1,16 @@
+{
+  "name": "angular-bandeiras",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "angular": "^1.5.8",
+    "body-parser": "^1.8.1",
+    "express": "^4.9.0"
+  }
+}

@@ -18,7 +18,7 @@ app.use(function (req, res, next) {
 
 app.get('/',function(req,res){
 	res.set({ 'content-type': 'application/json; charset=utf-8' })
-  	res.sendFile(__dirname + '/estados-cidades.json');
+  	res.sendFile(__dirname + '/bandeiras.json');
 });
 
 app.get('/estado/:uf',function(req,res){

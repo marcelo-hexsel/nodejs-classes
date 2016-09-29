@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Angular Bandeiras</title>
+</head>
+
+<body>
+    <script src="/node_modules/angular/angular.js"></script>
+    <script>
+        var app = angular.module('myApp', []);
+
+        app.controller('myCtrl', function($scope, $http) {
+            $scope.init = function() {
+                var bandeirasData = $http.get('http://localhost:4000').success(function(response) {
+                    $scope.bandeiras = response;
+                });
+            }
+        });
+    </script>
+
+    <div ng-app="myApp" ng-controller="myCtrl" ng-init="init()">
+        <ul>
+            <li ng-repeat="bandeira in bandeiras">
+                <img ng-src="{{bandeira.imagem}}" />{{bandeira.titulo}}
+            </li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>
