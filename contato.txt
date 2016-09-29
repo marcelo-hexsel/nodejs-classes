@@ -1,1 +1,4 @@
 jacksonmafra@targettrust.com.br
+
+monitr - ferramenta de monitoramento
+nodemon|forever - alterações em tempo real dos arquivos com node rodando.

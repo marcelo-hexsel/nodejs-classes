@@ -4,6 +4,7 @@ var url = require('url');
 var server = http.createServer(function(request, response) {
 
     // Faz um parse da string url digitada.
+    console.log(request.url);
     var result = url.parse(request.url, true);
 
     response.writeHead(200, {
